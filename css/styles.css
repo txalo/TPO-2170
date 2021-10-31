@@ -71,6 +71,11 @@ header section span{
     display: inline-block;
 }    
 
+hr{
+    margin: 0 36px 36px;
+    border-top:2px solid  #590a2fb9;
+    border-radius: 1px;  
+}
 
 #main-nav{
     display: flex;
@@ -83,11 +88,15 @@ header section span{
     list-style: none;
 }
 
+#main-nav ul li{
+    margin: 4px 0;
+}
+
 #main-nav ul li a{
     text-decoration: none;
     color: inherit;
-    font-size: 1.5em;
-    font-weight: 700;
+    font-size: 2em;
+    font-weight: bold;
     
 }
 
@@ -128,7 +137,8 @@ header section span{
 #description h6{
     font-family: Poppins, sans-serif;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 2em;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: #b8aaa7;
 }
