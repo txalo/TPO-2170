@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+/*
+Paleta 1
+Tower Gray #AEBFBC
+Cab Saw #590A2F
+Prim #F2E4E9
+Dusty Gray #A69497
+Buccaneer #593E36
+
+Paleta 2
+#cdccdb Gris tirando a violeta
+#e8d0d5 Rosa palido
+#74454b Morado
+#c79caf Rosa
+#423e36 Negro sucio
+https://ar.pinterest.com/pin/372954412898875188/feedback/?invite_code=ab6ffaf14f244da3a8a32ae73ee82f08&sender_id=261208984545924296
+
+Paleta 3
+#cd8495
+#b8aaa7
+#d5b4bb
+#ece3e6
+#a5bbd3
+https://i.pinimg.com/originals/bb/8c/c8/bb8cc8a5b9f4242853365a4c8f27ca52.jpg
+*/
+
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+body{    
+    margin: 0 auto;
+    max-width: 1200px;    
+    height: 100vh;
+    color:#590A2F;
+    background-color: #FFFFFF;
+}
+
+header{    
+    padding-top: 36px;
+    padding-bottom: 36px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Poppins', sans-serif;
+}
+
+header section{
+    display: flex;
+    align-items: center;    
+}
+
+header img#logo-sakura{
+    height: 60px;
+    margin-left: 36px;    
+    
+}
+
+header section span{
+    font-size: 3em;
+    font-weight: bold;
+    color: #590A2F;
+    margin-left: 36px;
+    display: inline-block;
+}    
+
+
+#main-nav{
+    display: flex;
+    justify-content: right; 
+    margin-right: 36px;   
+    font-family: 'Poppins', sans-serif; 
+}
+
+#main-nav ul{
+    list-style: none;
+}
+
+#main-nav ul li a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5em;
+    font-weight: 700;
+    
+}
+
+#main-nav ul li a:hover{
+    color: rgb(122, 122, 122);
+}
+
+
+#banner{
+    background-image:url("../img/bg_header.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    max-width: 1200px;
+    margin: 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ #banner p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    padding: 20px;
+    background-color: #590a2fb9;
+    display: inline;
+    text-align: center;
+    box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+#description{
+    text-align: center;
+    margin-top: 72px;
+}
+
+#description h6{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #b8aaa7;
+}
+
+#description h1{
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+#description p{    
+    font-weight: 400;
+    font-size: 2em;
+    margin-top: 18px;
+    padding: 0 18px;
+    
+}
+
+#features{
+    display: grid;
+    margin: 72px 0 36px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#features .feat-container{
+    text-align: center;
+}
+
+#features .feat-container i{
+    font-size: 6em;
+    color: #b8aaa7;
+}
+#features .feat-container span{
+    display: block;
+    margin-top: 18px;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#features .feat-container p{
+    font-size: 1.6em;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+#apartments-head h2{
+    font-size: 2.8em;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin: 18px 0 36px;
+}
+
+
+#apartments-head p{
+    font-size: 2em;
+    text-align: center;
+}
+
+#apartment-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 18px;
+}
+
+#apartment-list .apartment{
+    height: 300px;
+    overflow:hidden;
+    position: relative;
+    margin-top: 36px;;
+}
+
+#apartment-list .apartment img{
+    width: 100%;
+    height: 100%;
+    filter: saturate(75%);
+    overflow: hidden;
+    
+    /*filter: saturate(5%) hue-rotate(270deg);*/
+}
+
+#apartment-list .apartment .apt-label{
+    margin: 0;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.733);
+    color:#590a2f;
+    padding:1em 0;
+    position: absolute;
+    top:0;
+    right:10px;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+    padding: 15px 5px;
+    writing-mode: vertical-rl;
+    box-shadow: 2px 2px 2px 1px rgb(0,0,0,0.8);
+}
+
+.apt-label:before,
+.apt-label:after {
+  content: '';
+  position: absolute;
+  top:0;
+  margin: 0 -1px; 
+  width: 100%;
+  height: 100%;
+  
+}
+
+/*footer{
+    min-height: 100px;
+    margin-top: 36px;
+    padding: 18px 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0 18px; 
+    margin-top: 18px;
+}*/
+
+/*
+footer #address ul li{
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 18px;   
+    display: flex; 
+}
+
+
+footer #address ul li i{
+    font-size: 1.1em;
+    color: #b8aaa7;
+    margin-right: 18px;    
+}
+
+footer #address ul li span{
+    display: inline;
+    
+}
+*/
+
+/*footer #social{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 0;
+    flex-wrap: wrap;
+}
+
+footer #social i{
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+footer #social ul li a{
+    text-decoration: none;
+    color: #b8aaa7;    
+}
+
+footer #map {
+    border-radius: 5%;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    border: 1px solid #8e9eab;
+    text-align: center;
+    margin: 10px 0;
+}*/
+
+footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 36px 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;    
+}
+
+footer #social, 
+footer #bottom-nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 0;
+    flex-wrap: wrap;
+}
+
+footer #social li, 
+footer #bottom-nav li{
+    list-style: none;
+}
+
+footer #social li a{
+    font-size: 3em; 
+    color: #b8aaa7;
+    margin: 0 18px;   
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer #social li a:hover{
+    transform: translateY(-9px);
+}
+
+footer #bottom-nav li a{
+    font-size: 1.8em; 
+    color: #b8aaa7;
+    margin: 0 18px;   
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    opacity: 0.75;
+}
+
+footer #bottom-nav li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    color: #b8aaa7;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 1.4em;
+}
+
+#airbnb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+div.airbnb-embed-iframe{
+    display: inline-block;
+}
+
+#loading{
+    background-image: url("../img/loadingSakura.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 160px;
+    margin: 36px 0;
+    position: relative;
+}
+
+#loading span{
+    text-align: center;
+    vertical-align: text-bottom;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
