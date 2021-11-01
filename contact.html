@@ -43,20 +43,30 @@
             <div id="contact-inner">
                 <section id="contact-form">
                     <h2>Dejanos un mensaje</h2>
-                    <form action="contact.html">
+                    <form method="post" name="contactForm" novalidate>
                         <div class="form-group">
                             <input type="text" name="name" id="name" placeholder="Nombre">
+                            <span id="error-name" class="error-label hidden-error"></span>
                         </div>
                         <div class="form-group">
                             <input type="email" name="email" id="email" placeholder="Email">
+                            <span id="error-email" class="error-label hidden-error"></span>
                         </div>
                         <div class="form-group">
                             <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                            <span id="error-message" class="error-label hidden-error"></span>
                         </div>
+                        
                         <div class="form-group">
                             <input id="btn-submit" type="submit" value="Enviar">
-                        </div>
+                        </div>                        
                     </form>
+                </section>
+                <section id="success" class="isHidden">
+                    <h2>アリガトウ！　</h2>
+                    <p>
+                        ¡Gracias!　<br> Tu mensaje ha sido enviado con éxito. <br> Nos contactaremos contigo a la brevedad.
+                    </p>
                 </section>
                 <section id="contact-info">
                     <ul>
@@ -95,7 +105,7 @@
         </section>
 
     </footer>
-
+    <script src="js/contact.js"></script>
 </body>
 
 </html>

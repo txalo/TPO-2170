@@ -137,6 +137,28 @@ main h1{
     font-size: 2em;
 }
 
+#success{
+    padding: 0 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+#success h2{
+    font-size: 3em;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    color: #590a2f;
+    font-weight: 500;
+}
+#success p{
+    font-weight: 600;
+    font-size: 2em;
+    color: #b8aaa7;
+    margin-bottom: 18px;
+}
+
 #contact-inner{
     display: grid;
     grid-template-columns: 1fr 1fr;    
@@ -145,6 +167,7 @@ main h1{
 
 #contact-form{
     padding: 0 18px;
+    
 }
 
 #contact-form .form-group{
@@ -160,6 +183,13 @@ main h1{
     border-radius: 5px;
     border: 1px solid #b8aaa7;
     background-color: #f1f1f1;
+}
+
+#contact-form .error-label{
+    color: #b8aaa7;
+    font-size: 1.5em;
+    margin-bottom: 9px;    
+    padding-left: 9px;
 }
 
 textarea:focus, input:focus{
@@ -279,6 +309,10 @@ footer p{
     margin-top: 18px;
     margin-bottom: 18px;
     font-size: 1.4em;
+}
+
+.isHidden{
+    display: none !important;
 }
 
 @media all and (min-width:650px) and (max-width:1150px){

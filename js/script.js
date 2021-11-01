@@ -51,31 +51,4 @@ apartmentList.forEach(element =>{
 })
     
 
-console.log(stringAPT);
-
-
-
-/*                    <div class="apartment">
-                        <img src="img/tokyo_shinjuku.jpg" alt="Shibuya - Tokyo">
-                        <span class="apt-label">東京</span>
-                    </div>
-                    <div class="apartment">
-                        <img src="img/nara.jpg" alt="Nara">
-                        <span class="apt-label">奈良</span>
-                    </div>
-                    <div class="apartment">
-                        <img src="img/hiroshima2.jpg" alt="Hiroshima">
-                        <span class="apt-label">広島</span>
-                    </div>
-                    <div class="apartment">
-                        <img src="img/kamakura.jpg" alt="Kamakura">
-                        <span class="apt-label">鎌倉</span>
-                    </div>
-                    <div class="apartment">
-                        <img src="img/kyoto.jpg" alt="Kyoto">
-                        <span class="apt-label">京都</span>
-                    </div>
-                    <div class="apartment">
-                        <img src="img/osaka.jpg" alt="Osaka">
-                        <span class="apt-label">大阪</span>
-                    </div>*/
+//console.log(stringAPT);
