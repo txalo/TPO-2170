@@ -132,6 +132,7 @@ hr{
 #description{
     text-align: center;
     margin-top: 72px;
+    padding: 0 18px;
 }
 
 #description h6{
@@ -417,7 +418,8 @@ div.airbnb-embed-iframe{
 
     header{
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
+        padding-bottom: 0;        
     }
     
     header section{
@@ -452,17 +454,27 @@ div.airbnb-embed-iframe{
         text-align: center;
     }
 
+    #description{
+        margin-top: 36px;
+    }
+
     #features{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 36px;
         margin-bottom: 36px;
         margin-right: 0;
     }
 
     #features .feat-container{
         margin-top: 18px;
+        padding: 0 18px;
+    }
+
+    #features .feat-container span{
+        margin-top: 9px;
         padding: 0 18px;
     }
 
@@ -479,7 +491,7 @@ div.airbnb-embed-iframe{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 36px;
+        margin-bottom: 18px;
         margin-right: 0;
     }
 
