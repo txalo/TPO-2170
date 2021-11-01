@@ -133,7 +133,7 @@ main h1{
 #contact h2{
     font-weight: 600;
     color: #b8aaa7;
-    padding: 18px 36px 0;
+    padding: 18px 0px 0;
     font-size: 2em;
 }
 
@@ -281,24 +281,28 @@ footer p{
     font-size: 1.4em;
 }
 
-@media all and (min-width:1151px) and (max-width:1300px){
-
-}
-
 @media all and (min-width:650px) and (max-width:1150px){
     #contact{
         width: 90%;
-        margin: -72px auto 36px;
+        margin: -54px auto 36px;
         grid-gap: 0.5rem;    
         padding: 18px 18px;
         border-radius: 8px;    
+    }
+
+    #contact-inner{
+        grid-template-columns: 1.2fr 0.8fr;
+    }
+
+    #contact-info iframe{
+        width: 90%;
     }
 }
 
 @media all and (max-width:649px){
 
     header{
-        height: 80vh;
+        height: 90vh;
     }
     
     #header-top{
@@ -339,52 +343,15 @@ footer p{
     }
     
     #header-top #main-nav ul li{    
-        display: inline-block;
+        
         margin-left: 0;
         padding: 9px 0;
     }
     
-    #header-top #main-nav ul li a{    
-        color: #FFF;
-        font-size: 1.8em;
-        font-weight: 600;
-        text-decoration: none;
-        text-transform: uppercase;
+    #header-top #main-nav ul li a{          
+        font-size: 1.8em;        
     }
-    
-    #header-top #main-nav ul li a:hover{    
-        color: #b8aaa7;
-    }
-    
-    #banner{
-        margin: 0;
-        color: #ffffff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
-    }
-    
-    #banner p{
-        font-weight: 700;
-        font-size: 3em;
-        padding: 20px;
-        background-color: #fff;
-        color: #590a2f;
-        display: inline;
-        text-align: center;
-        box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);   
-    }
-    
-    #banner p span{
-        font-weight: 700;
-        font-size: 2em;    
-        line-height: 1.5em;
-        display: block;
-        
-    }
-
+      
     #contact{
         width: 95%;
         margin: -72px auto 36px;
@@ -396,5 +363,9 @@ footer p{
         display: flex;  
         flex-direction: column;
         justify-content: center;
+    }
+
+    footer{
+        padding: 18px;;
     }
 }
